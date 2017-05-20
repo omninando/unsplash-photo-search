@@ -1,0 +1,54 @@
+{
+  "name": "create-next-example-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "generate-icons": "icon-font-generator ./src/assets/icons/*.svg -o ./src/assets/fonts",
+    "start-js": "react-scripts start",
+    "startDev": "npm-run-all -p watch-css start-js",
+    "buildDev": "npm run build-css && react-scripts build && sw-precache --navigate-fallback='index.html' --root='build/' --static-file-globs='build/**/!(*map*)' --import-scripts='firebase-messaging-sw.js'",
+    "deploy": "npm run build && bash deploy.sh",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "https": "^1.0.0",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "pushstate-server": "^1.14.0",
+    "react-scripts": "0.7.0",
+    "react-snapshot": "^1.0.4",
+    "socket.io": "^1.7.3",
+    "sw-precache": "^4.2.1"
+  },
+  "dependencies": {
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "classnames": "^2.2.5",
+    "history": "^4.6.1",
+    "icon-font-generator": "^1.0.7",
+    "prop-types": "^15.5.8",
+    "react-datepicker": "^0.46.0",
+    "react-dates": "^11.0.1",
+    "react-fullpage": "^0.1.16",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-transition": "0.0.6",
+    "react-slick": "^0.14.11",
+    "react-touch": "^0.4.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "homepage": "/",
+  "watch": {
+    "generate-icons": "./src/assets/icons/*.svg"
+  }
+}
