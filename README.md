@@ -1,4 +1,4 @@
-# Photo Based Search
+# Image Based Search
 
 This project consists in a image based search which uses computer vision to get features from the images you upload and search for similiar images on [Unsplash](www.unsplash.com).
 
