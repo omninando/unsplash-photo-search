@@ -72,8 +72,8 @@ app.prepare()
             }
         });
 
-        server.listen(8000, (err) => {
+        server.listen(process.env.PORT || 8080, (err) => {
             if (err) throw err
-            console.log('> Ready on http://localhost:8000')
+            console.log('> Ready on http://localhost:8080')
         })
     });
