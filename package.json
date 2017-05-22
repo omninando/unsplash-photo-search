@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node server.js",
-    "build": "node_modules/next/dist/bin/next build && sw-precache --navigate-fallback='index.html' --root='.next/' --static-file-globs='.next/**/!(*map*)'",
+    "build": "./node_modules/.bin/next build && ./node_modules/.bin/sw-precache --navigate-fallback='index.html' --root='.next/' --static-file-globs='.next/**/!(*map*)'",
     "start": "npm run build && NODE_ENV=production node server.js",
     "build-css": "node-sass ./assets/styles/ -o ./assets/styles/",
     "watch-css": "npm run build-css && node-sass ./assets/styles/ -o ../assets/styles/ --watch --recursive",
