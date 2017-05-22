@@ -9,10 +9,10 @@ class ImageList extends React.Component {
             isModalOpen: false
         };
 
-        this.openModal = this.openModal.bind(this);
+        this.toggleModal = this.toggleModal.bind(this);
     }
 
-    openModal(event) {
+    toggleModal(event) {
         const {
             isModalOpen
         } = this.state;
@@ -20,6 +20,14 @@ class ImageList extends React.Component {
         const {
             images
         } = this.props;
+
+        if (isModalOpen) {
+            this.setState({
+                isModalOpen: !isModalOpen
+            });
+
+            return;
+        }
 
         images.forEach((item) => {
             console.log(item.urls.small === event.target.src)
@@ -51,7 +59,7 @@ class ImageList extends React.Component {
                 {
                     images &&
                     images.map((item, index) => {
-                        return <div onClick={this.openModal} className='image-list__image' key={index} >
+                        return <div onClick={this.toggleModal} className='image-list__image' key={index} >
                                 <img src={item.urls.small} />
                             </div>
                     })
@@ -62,11 +70,20 @@ class ImageList extends React.Component {
                         <div
                             className="image-modal__information"
                             style={{backgroundImage: 'url('+ modalInfo.urls.regular + ')', backgroundSize: 'cover'}}>
+                            <div className="image-modal__information__overlay"></div>
+                            <a
+                                onClick={this.toggleModal}
+                                className="image-modal__information__close">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                                    <path fill="currentColor" d="M638.6 500l322.7-322.7c38.3-38.3 38.3-100.3 0-138.6S861 .4 822.7 38.7L500 361.4 177.3 38.7C139 .4 77 .4 38.7 38.7S.4 139 38.7 177.3L361.4 500 38.7 822.7C.4 861 .4 923 38.7 961.3 57.9 980.4 82.9 990 108 990s50.1-9.6 69.3-28.7L500 638.6l322.7 322.7c19.1 19.1 44.2 28.7 69.3 28.7 25.1 0 50.1-9.6 69.3-28.7 38.3-38.3 38.3-100.3 0-138.6L638.6 500z"/>
+                                </svg>
+                            </a>
                             <p className="image-modal__information__name">
                                 {modalInfo.user.last_name ? modalInfo.user.first_name + ' ' + modalInfo.user.last_name : modalInfo.user.first_name}
                             </p>
-                            <a  className="image-modal__information__download"
-                                href={modalInfo.links.download}>
+                            <a className="image-modal__information__download"
+                               href={modalInfo.links.download}
+                               target="_blank">
                                 Download
                             </a>
                         </div>
@@ -111,6 +128,7 @@ class ImageList extends React.Component {
                 }
 
                 .image-modal__information {
+                    align-items: center;
                     display: flex;
                     flex-direction: column;
                     height: 100%;
@@ -120,14 +138,50 @@ class ImageList extends React.Component {
                     width: 100%;
                 }
 
+                .image-modal__information__close {
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                }
+
                 .image-modal__information__name {
                     color: white;
-                    font-size: 60px;
+                    font-size: 42px;
+                    line-height: 0;
+                    z-index: 1;
+                }
+
+                .image-modal__information__overlay {
+                    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+                    height: 100%;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 0;
                 }
 
                 .image-modal__information__download {
-                    color: white;
-                    font-size: 32px;
+                    color: #bbb;
+                    display: block;
+                    font-size: 26px;
+                    margin-bottom: 4%;
+                    padding: 8px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    width: 250px;
+                    z-index: 1;
+                }
+
+                @media (min-width: 768px) {
+                    .image-modal__information__name {
+                        font-size: 60px;
+                    }
+
+                    .image-modal__information__download {
+                        font-size: 32px;
+                    }
                 }
 
                 .image-list {
