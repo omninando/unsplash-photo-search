@@ -39,7 +39,7 @@ export const getImages = (files) => {
     objFormData.append('file', files);
 
     return $.ajax({
-            url: 'http://192.168.0.15:8000/hook',
+            url: 'https://unsplash-photo-search.herokuapp.com/hook',
             type: 'POST',
             contentType: false,
             data: objFormData,
