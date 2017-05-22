@@ -60,7 +60,7 @@ class ImageList extends React.Component {
                     images &&
                     images.map((item, index) => {
                         return <div onClick={this.toggleModal} className='image-list__image' key={index} >
-                                <img src={item.urls.small} />
+                                <img src={item.urls.regular} />
                             </div>
                     })
                 }
