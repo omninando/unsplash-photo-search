@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build && sw-precache --navigate-fallback='index.html' --root='.next/' --static-file-globs='.next/**/!(*map*)'",
-    "start": "NODE_ENV=production node server.js",
+    "start": "npm run build && NODE_ENV=production node server.js",
     "build-css": "node-sass ./assets/styles/ -o ./assets/styles/",
     "watch-css": "npm run build-css && node-sass ./assets/styles/ -o ../assets/styles/ --watch --recursive",
     "generate-icons": "icon-font-generator ./assets/icons/*.svg -o ./assets/fonts"
