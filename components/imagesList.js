@@ -30,13 +30,11 @@ class ImageList extends React.Component {
         }
 
         images.forEach((item) => {
-            console.log(item.urls.small === event.target.src)
-            if (item.urls.small === event.target.src) {
+            if (item.urls.regular === event.target.src) {
                 this.setState({
                     modalInfo: item,
                     isModalOpen: !isModalOpen
                 });
-                console.log(this.state.modalInfo)
             }
         })
 
@@ -108,23 +106,24 @@ class ImageList extends React.Component {
                 }
 
                 .image-modal {
+                    left: 0;
+                    height: 100vh;
+                    margin: 0;
+                    opacity: 0;
+                    padding: 0;
                     position: fixed;
                     top: 0;
-                    padding: 0;
-                    margin: 0;
-                    width: 100vw;
-                    height: 100vh;
-                    z-index: -1;
-                    opacity: 0;
-                    visibility: hidden;
                     transition: 0.3s ease-in;
+                    visibility: hidden;
+                    width: 100vw;
+                    z-index: -1;
                 }
 
                 .image-modal.-active {
-                    z-index: 100;
-                    opacity: 1;
                     background: black;
+                    opacity: 1;
                     visibility: visible;
+                    z-index: 100;
                 }
 
                 .image-modal__information {
@@ -139,12 +138,12 @@ class ImageList extends React.Component {
                 }
 
                 .image-modal__information__close {
+                    color: white;
+                    height: 30px;
                     position: absolute;
                     right: 20px;
                     top: 20px;
                     width: 30px;
-                    height: 30px;
-                    color: white;
                 }
 
                 .image-modal__information__name {
@@ -200,8 +199,13 @@ class ImageList extends React.Component {
                     margin: 1% 1% 3%;
                     overflow: hidden;
                     position: relative;
+                    transition: 0.3s;
+                    transform: scale(1);
                     width: 90%;
-                    transition: 0.3s
+                }
+
+                .image-list__image:hover {
+                    transform: scale(1.1);
                 }
 
                 @media (min-width: 768px) {
@@ -218,11 +222,11 @@ class ImageList extends React.Component {
                 }
 
                 .image-list__image img {
+                    left: -25%;
                     margin-left: 0;
                     position: absolute;
-                    width: 150%;
-                    left: -25%;
                     top: -5%;
+                    width: 150%;
                 }
             `}</style>
         </section>

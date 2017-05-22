@@ -139,29 +139,29 @@ class ImageSearcher extends React.Component {
 
                 .dropzone {
                     align-items: center;
+                    cursor: pointer;
                     display: flex;
                     flex-direction: column;
                     font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
                     justify-content: center;
                     text-align: center;
-                    cursor: pointer;
                     width: 100vw;
                 }
 
                 .dropzone__background {
-                    background-size: cover;
-                    color: #333;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    height: 100%;
-                    position: fixed;
-                    width: 100vw;
-                    opacity: 0;
                     animation: fadeIn 15s cubic-bezier(0.19, 1, 0.22, 1);
                     animation-delay: .3s;
                     animation-fill-mode: forwards;
+                    background-size: cover;
+                    bottom: 0;
+                    color: #333;
+                    height: 100%;
+                    left: 0;
+                    position: fixed;
+                    opacity: 0;
+                    right: 0;
+                    top: 0;
+                    width: 100vw;
                 }
 
                 .dropzone__background::after {
