@@ -5,7 +5,12 @@ import ImageSearcher from '../components/imageSearcher'
 class Index extends React.Component {
     render() {
         return <div className="hero">
-            <Head title="Home"/>
+            <Head
+                title="Unsplash Photo Search"
+                description="Search images on Unsplash based on a photo you upload."
+                url="https://unsplash-photo-search.herokuapp.com/"
+                ogImage="/static/screenshot.png"
+            />
             <ImageSearcher />
             <style jsx>{`
                 .hero {

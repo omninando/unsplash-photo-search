@@ -11,8 +11,8 @@ export const Head = (props) => (
         <title>{props.title || ''}</title>
         <meta name="description" content={props.description || defaultDescription}/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="icon" sizes="192x192" href="/static/touch-icon.png"/>
-        <link rel="apple-touch-icon" href="/static/touch-icon.png"/>
+        <link rel="icon" sizes="192x192" href="/static/icon192.png"/>
+        <link rel="apple-touch-icon" href="/static/icon192.png"/>
         <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882"/>
         <link rel="icon" href="/static/favicon.ico"/>
         <link rel="manifest" href="/static/manifest.json"/>
