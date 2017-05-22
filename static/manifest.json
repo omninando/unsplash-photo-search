@@ -1,0 +1,37 @@
+{
+  "short_name": "Unsplash Photo Search",
+  "name": "Unsplash Photo Search",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "icon48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "icon72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }, {
+      "src": "icon96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }, {
+      "src": "icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "icon168.png",
+      "sizes": "168x168",
+      "type": "image/png"
+    }, {
+      "src": "icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "gcm_sender_id": "103953800507",
+  "scope": "/"
+}

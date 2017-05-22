@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "optical-metric-168301",
+  "private_key_id": "b718e81c57d535fa6970206acf2f82383dbee658",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCaYBQ7dF+Yc74z\nmvL1XVWue4DlTYqZqilMIsj0DuSevWW2GXxr3/WUW3vlChF3WmswfAcUXgEHb7oL\ngDcg8dsH9WYoaTYnD50eQK+ljr1qUfQJqn72KpFqt+ix8k+dzf5mfOaL4ThT1rGb\nB78N4MQF0TaTpAMh5VjeNVE1Vt8hgKSkPgoFaigXpW+vPp8IqjZWALWvvtbxw4W7\nE3qliLaXZCfSWoRsg+/XnFyFxvPJEZk7vq8ieVn6JLcRpmAez3ATttB1Gqufzxm3\n0FEf5O+9AOqnvpvitz6lfqQ0LyvRXB+xaXwoFZXPICH5jlIWPkX/GnLbpKRE5t7e\ndX1gbBUtAgMBAAECggEAFgM3P1cTvohaib9Bf61EZ3Hi6k+JQOobo2ieYPaysNPu\n6e1uaW9w9CurWfh6jxtMh4hX9haFbQsIa1VoBwGVqufaHk8KUr2OON8ebKwS5FM1\nSh+OpQli3OXGf4E+yxCxgumyciW2Q3Yssx+Cpbb0HKQ9dQYBEFdEucK+hq2ReZRG\no0Keg2eeFMwbyQ3kIvgYYcjSPIVuZjp7ew7O46SEv8z0V6EydfBw1ewWm4cT18nf\nADuXMU+EMG2AIix75697LQqvllGUR1xIctoE34QJwDHKypNpzJ3SzTf6T4RqyKyo\n8o2PKcMbUEkMGRy873jQ2Ic/4ENPA2H7pDYlXzuvIQKBgQDQmdHfXD9cPS22zpgr\nfWrS/ASxZVC13M+pJ3xJP+yi8eFJOPwh8Y2kVDyM5Q0Y2Y3Kk5TEzq0WOslZxKX1\neQcTMLURC6Stz4CVO3yzqEfbtvSkxOQe0AyAXKmVSWeMaOwGciLCLhUfO5iVC/Gv\nZy8k8SUSSiKSwQsJ14PRc1cgSQKBgQC9c/5ETR5flGNFIc2Cq1/zSNt/xmYM0cHu\nAwzaYVMydNbwVambZumCC5u8PkCD/VtaAk1hHKI6YVIW/QxNtuvClmqDhx/Y6knd\nn4P5QECIam7rnJva18eM+Tr6YpwqwqmjFvAdBpGDmvGHVdoNYQT8CQ1kFpWs2XBP\nCUA/+2hVxQKBgHia5oewawWmbX7LFZnXamLPyNrTzAVJxFp1dNtY9TUEig9uvf/W\nC+GdvmBrsdXTOrKL/zCGmfZHSND47EbvkZKbz6QqSi0f0qT1ftTUj69NqUZ2e7oA\n6alxaa7hgNfidcwIQ2ZnhFjJeR97h2G1U8GVFqzrZe/ZYstu6ky31gDZAoGAGYOX\niKdCIekf/V1yCdj+kQsM1IZpk+xjy6QJhRd6Vt85WyCOOOmBJQxfKtjPY3cpaFPL\nC/sJNgeJQKNPlt+9nHUZXyFBfrr+u6QR5+1pQ3Xh/kUXED/jFe8yrCm/klqo8dfS\n+nW5/xlM0ccUGJ0qSK8HaKVJ/v9BisNaLcOz52kCgYAgVKAWQEvIKAEHPVUTT3bK\n3c0vAp/vVTMX86EoV0q38lm9I2VnfK0ogfrFEoiFwpXroAsHkbRn40pR9RiRlV/+\ncGJYENsKmGYkcjVmhlg+NV6MePb2jlkufLtT712GJdBS6KLlaKLpKluP309AbyHX\nkhtFDvxtEmwzOvZjKu1/IQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "xablau@optical-metric-168301.iam.gserviceaccount.com",
+  "client_id": "103929913696657093641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/xablau%40optical-metric-168301.iam.gserviceaccount.com"
+}
